@@ -1,0 +1,12 @@
+<div *ngFor="let key of keys; index as i">
+  <span>{{ key }}</span>
+  <span>{{ users | filter: keysNumber[i] }}</span>
+  <a
+    [routerLink]="['/navigator']"
+    [queryParams]="{ tab: i }"
+    role="button"
+    class="btn btn-primary"
+  >
+    See all
+  </a>
+</div>
