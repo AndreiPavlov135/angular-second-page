@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { IResponse } from 'src/app/models/response.model';
-import { UserService } from '../services/user.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-heading',
@@ -9,9 +9,14 @@ import { UserService } from '../services/user.service';
   styleUrls: ['./heading.component.scss'],
 })
 export class HeadingComponent implements OnInit, OnDestroy {
-  private subscriptions = new Subscription();
-  constructor(private userService: UserService) {}
   amountTransactions!: number;
+  private subscriptions = new Subscription();
+
+  constructor(private userService: UserService) {}
+
+  public alert(): void {
+    alert('List page');
+  }
 
   ngOnInit(): void {
     this.subscriptions.add(

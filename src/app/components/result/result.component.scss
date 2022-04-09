@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    padding: 0;
+    width: 50%;
+}
+
+.box__wrapp{
+    justify-content: space-around;
+    padding: 0 2em;
+    width: 49%;
+    height: 150px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin: 8px 0 0;
+    background: linear-gradient(to top, #b5bdc8 0%, #fff 20%)
+}
+
+span {
+    display: block;
+}
